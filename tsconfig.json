@@ -1,0 +1,32 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "allowJs": true,
+    "alwaysStrict": false,
+    "baseUrl": "src",
+    "declaration": false,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "forceConsistentCasingInFileNames": true,
+    "lib": ["es2017", "dom"],
+    "module": "esnext",
+    "moduleResolution": "node",
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitAny": false,
+    "noImplicitReturns": true,
+    "noImplicitThis": false,
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    "removeComments": true,
+    "skipLibCheck": true,
+    "sourceMap": true,
+    "sourceRoot": "src",
+    "strictNullChecks": false,
+    "target": "es5"
+  },
+  "exclude": ["node_modules"],
+  "filesGlob": ["./src/**/*.ts"],
+  "atom": {
+    "rewriteTsconfig": false
+  }
+}

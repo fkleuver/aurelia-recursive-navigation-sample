@@ -1,0 +1,7 @@
+<template class="ui menu vertical">
+  <template repeat.for="nav of router.navigation">
+    <a href.bind="nav.href" class="item ${nav.isActive ? 'active' : ''}">
+      ${nav.title}
+    </a>
+  </template>
+</template>

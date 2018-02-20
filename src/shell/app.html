@@ -1,0 +1,14 @@
+<template>
+  <require from="./app.css"></require>
+  <div class="ui segment">
+    <nav-menu router.bind="router">
+    </nav-menu>
+    <h3>Open a long/slow url</h3>
+    <div class="ui buttons">
+      <button click.delegate="openAllAtOnce()" class="ui button">All at once</button>
+      <button click.delegate="openOneByOne()" class="ui button">One by one</button>
+    </div>
+  </div>
+  <router-view ref="routerView">
+  </router-view>
+</template>

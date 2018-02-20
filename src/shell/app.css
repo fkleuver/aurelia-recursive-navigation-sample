@@ -1,0 +1,34 @@
+body {
+  overflow-y: hidden;
+  overflow-x: hidden;
+  width: 100vw;
+  height: 100vh;
+}
+
+body, router-view {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+body>router-view {
+  flex: 1 0 auto;
+  max-width: calc(100% - 18rem);
+
+  overflow-y: hidden;
+  overflow-x: auto;
+}
+
+router-view>router-view {
+  flex: 0 0 auto;
+}
+
+.ui.segment {
+  margin: 0;
+}
+
+.window.close.icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+}
