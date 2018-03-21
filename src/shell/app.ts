@@ -18,6 +18,9 @@ export class AppShell {
   }
 
   public async configureRouter(config: RouterConfiguration, router: Router): Promise<void> {
+    if (/aurelia-recursive-navigation-sample/.test(PLATFORM.location.pathname)) {
+      config.options.root = "/aurelia-recursive-navigation-sample/";
+    }
     config.map([
       defaultRoute,
       {
